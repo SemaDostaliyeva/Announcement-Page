@@ -1,0 +1,183 @@
+body{
+    padding-top: 5.8%;
+    
+}
+
+.flex-add-div-main{
+    width: 100%;
+    height: 62rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-add-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.5) ;
+    border-radius: 1rem;
+    padding: 2rem 2rem 0rem 4rem;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.flex-add-div{
+    width: 37%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex-add-div-info{
+    width: 26%;
+    height: 97%;
+    padding: 2rem;
+    border-left: 1px dotted gray;
+}
+
+.flex-add-div-info li{
+    line-height: 1.25;
+    font-size: 1.9rem;
+    margin:1rem;
+}
+
+.flex-add-div-info li::before{
+    content: "\2022";
+    color: rgb(248, 99, 25);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.label-input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2.4rem;
+}
+
+#img-not{
+    width: fit-content;
+    margin: 0;
+}
+
+.label-input-flex-row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.label-input input:not([id=img],[type=radio],[class=not]), .label-input select{
+    border: none;
+    height: 3rem;
+    width: 60%;
+    border-bottom: 0.3rem;
+    color: black;
+    border-bottom-style: solid;
+    border-color: rgb(248, 99, 25);
+    background-color: transparent;
+    font-size: 1.7rem;
+}
+
+.label-input input{
+    margin-top: 1rem;
+}
+
+.label-input input::placeholder{
+    color: rgb(43, 42, 42);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.label-input label:not([class=not]) {
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.label-input input:focus, .label-input select:focus{
+    outline: none;
+}
+
+.label-input select{
+    width: 60%;
+    padding: 0;
+}
+
+.label-input input:focus::placeholder{
+    color: transparent;
+}
+
+#village, #yard{
+    width: 30%;
+    margin-left: 4.7rem;
+    margin-top: 0;
+}
+
+.radio{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.radio label{    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.not input{
+    margin-bottom: 0.8rem !important;
+    margin-right: 0.5rem !important;
+}
+
+.regionerazisi{
+    width: 100%;
+    display: flex;
+    padding-right: 10%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info{
+    /* width: ; */
+    resize: none;
+}
+
+.img-submit-reset{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 5%;
+    align-items: flex-end;
+}
+
+.btn-add{
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    height: 3rem;
+    padding: 0.1rem 1.5rem;
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+    background-color:  rgb(248, 99, 25);
+    color: white;
+}
+
+.btn-add:hover{
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.5) ;
+    background-color: rgb(255, 245, 245);
+    color: rgb(248, 99, 25);
+}

@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+*::selection{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+html{
+    font-size: 62.8%;
+}
+
+html:not([class=nav]){
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body{
+    background-color: #f2f2f2;
+    padding: 6% ;
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#profile-icon2{
+    cursor: pointer;
+    display: none;
+    width: 4rem;
+}
+
+#profile-icon1{
+    cursor: pointer;
+    display: block;
+    width: 4rem;
+}
+
+#profile-icon{
+    margin: 0 3rem 0 1rem;
+}
+
+.profile-name-icon:hover #profile-icon1{
+    cursor: pointer;
+    display: none;
+}
+
+.profile-name-icon:hover #profile-icon2{
+    cursor: pointer;
+    display: block;
+}
+
+.profile-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* nav */
+
+.fixed-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 6%;
+    width:100%;
+    background-color: #f2f2f2;
+    z-index: 4;
+}
+
+.nav a:hover, .nav span:hover{
+    color: rgb(248, 99, 25);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.nav{
+    height: 8rem;
+    font-size: 1.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-weight: 800;
+}
+
+.main-nav, .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav{
+    width: 60rem;
+}
+
+.user-nav{
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-name-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* filter */
+
+.filter{
+    padding:0 2rem;
+    width: 30%;
+    background-color: #f0e9e9;
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.5) ;
+    font-size: 1.8rem;
+}
+
+.form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.filter div{
+    padding: 0.5rem 0;
+}
+
+.div-filter-select{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter input:not([id=search-button]){
+    background: transparent;
+    width: 5rem;
+    height: 3rem;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.filter input::placeholder{
+    font-size: 1.6rem;
+}
+
+.filter select{
+    background: transparent;
+    width: 15rem;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    height: 3rem;
+    font-size: 1.6rem;
+}
+
+.filter select:focus, .filter input:focus{
+    outline: none;
+    border: 0.2rem solid black;
+}
+
+.filter input:focus::placeholder{
+    color:  #f0e9e9;
+}
+
+.select *{
+    background-color: #f0e9e9;
+    
+}
+
+.select option:hover{
+    background: orange;
+}
+
+.select *:checked{
+    background-color: #d4cccc;
+}
+
+.search-btn-div{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+}
+
+/* sort */
+#search-button, .sort-submit{
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+    background-color:  #f86319;
+    color: white;
+}
+
+#search-button:hover, .sort-submit:hover{
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.5) ;
+    background-color: rgb(255, 245, 245);
+    color: rgb(248, 99, 25);
+}
+
+.sort-submit{
+    height: 3rem;
+}
+
+.sort{
+    width: 100%;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sort-form{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sort-form label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+input[type=radio]{
+    margin-bottom: 0.2rem;
+    accent-color: rgb(248, 99, 25);
+}
+
+/* pop-ups */
+.flex-div div:nth-child(1){
+    padding: 2.5rem 0 0 0;
+}
+
+.flex-div p{
+    margin: 0.5rem 0;
+}
+
+
+/* FOOTER */  
+.footer-distributed{
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    color: black;
+    border-top: 0.1rem solid #33383b;
+    font: bold 1.6rem sans-serif;
+    padding: 2.3rem 5rem;
+    margin-top: 6rem;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+    width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+    margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    font-weight:400;
+    text-decoration: none;
+    color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+    width: 35%;
+}
+
+.footer-distributed .footer-center i{
+    background-color:  #33383b;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+    display: inline-block;
+    font-weight:400;
+    vertical-align: middle;
+    margin:0;
+}
+
+.footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+    text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight:300;
+    font-size: 20px;
+    left: 0;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+    .footer-distributed{
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i{
+        margin-left: 0;
+    }
+
+}
